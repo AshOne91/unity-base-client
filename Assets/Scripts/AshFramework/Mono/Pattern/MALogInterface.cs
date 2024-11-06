@@ -1,6 +1,6 @@
 namespace ASHFramework.Mono.Pattern
 {
-    public class ASHLogInterface
+    public interface MALogInterface
     {
         void ToLog(string logText);
     }

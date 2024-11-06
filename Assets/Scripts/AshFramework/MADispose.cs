@@ -2,7 +2,7 @@ using System;
 
 namespace ASHFramework.Mono
 {
-    public abstract class ASHDispose : ASHObject, IDisposable
+    public abstract class MADispose : MAObject, IDisposable
     {
         private bool _disposed = true;
         public bool _Disposed
@@ -13,12 +13,12 @@ namespace ASHFramework.Mono
         protected abstract void Construct();
         protected abstract void Destruct();
 
-        protected ASHDispose() 
+        protected MADispose() 
         {
             _disposed = false;
             Construct();
         }
-        ~ASHDispose()
+        ~MADispose()
         {
             Dispose(false);
         }
@@ -43,16 +43,16 @@ namespace ASHFramework.Mono
         }
     }
 
-    public abstract class ASHDisposeEX : ASHObject, IDisposable
+    public abstract class MADisposeEX : MAObject, IDisposable
     {
         private bool _disposed = true;
 
-        protected ASHDisposeEX()
+        protected MADisposeEX()
         {
             _disposed = false;
         }
 
-        ~ASHDisposeEX()
+        ~MADisposeEX()
         {
             Dispose(false);
         }

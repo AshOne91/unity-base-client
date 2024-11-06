@@ -1,6 +1,6 @@
 namespace ASHFramework.Mono.Pattern
 {
-    public interface ASHActionInterface
+    public interface MAActionInterface
     {
         void DoAction();
     }
